@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Timetable</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem 1rem;
+      background: #f3f6fb;
+      color: #1f2937;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1,
+    h2 {
+      color: #173b6c;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgb(23 59 108 / 10%);
+    }
+
+    table {
+      width: 100%;
+      min-width: 680px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 0.9rem;
+      border: 1px solid #d6deea;
+      text-align: center;
+    }
+
+    thead th {
+      background: #173b6c;
+      color: #fff;
+    }
+
+    tbody th {
+      background: #e8eef7;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    tbody tr:nth-child(even) td {
+      background: #f8faff;
+    }
+
+    .events {
+      margin-top: 1.5rem;
+      padding: 1rem 1.5rem;
+      background: #fff;
+      border-left: 4px solid #e6a23c;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Weekly Timetable</h1>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Time</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            <th scope="col">Friday</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">9:00–10:00</th>
+            <td>OS</td>
+            <td>CN</td>
+            <td>DBMS</td>
+            <td>ADA</td>
+            <td>Java</td>
+          </tr>
+          <tr>
+            <th scope="row">10:00–11:00</th>
+            <td>CN</td>
+            <td>DBMS</td>
+            <td>ADA</td>
+            <td>Java</td>
+            <td>OS</td>
+          </tr>
+          <tr>
+            <th scope="row">11:00–12:00</th>
+            <td>DBMS</td>
+            <td>ADA</td>
+            <td>Java</td>
+            <td>OS</td>
+            <td>CN</td>
+          </tr>
+          <tr>
+            <th scope="row">12:00–1:00</th>
+            <td colspan="5">Lunch Break</td>
+          </tr>
+          <tr>
+            <th scope="row">1:00–2:00</th>
+            <td>ADA</td>
+            <td>Java</td>
+            <td>OS</td>
+            <td>CN</td>
+            <td>DBMS</td>
+          </tr>
+          <tr>
+            <th scope="row">2:00–3:00</th>
+            <td>Java</td>
+            <td>OS</td>
+            <td>CN</td>
+            <td>DBMS</td>
+            <td>ADA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <section class="events" aria-labelledby="events-heading">
+      <h2 id="events-heading">Upcoming Events</h2>
+      <ul>
+        <li>Hackathons</li>
+        <li>Sports</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
